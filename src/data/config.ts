@@ -1,9 +1,9 @@
 // Konfigurasi umum website
 export const siteConfig = {
   // Informasi Dasar
-  siteName: 'Penulis Digital',
-  author: 'Nama Penulis', // Ganti dengan nama Anda
-  email: 'contact@penulisdigital.com', // Ganti dengan email Anda
+  siteName: 'Emuhib',
+  author: 'Asfahul Muhib', // Ganti dengan nama Anda
+  email: 'contact@emuhib.com', // Ganti dengan email Anda
   
   // Social Media Links - Ganti dengan link media sosial Anda
   socialLinks: {
