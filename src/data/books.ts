@@ -51,21 +51,37 @@ export const books: Book[] = [
   {
     id: 3,
     title: {
-      id: 'Storytelling dalam Era Digital',
-      en: 'Storytelling in Digital Age'
+      id: 'Sakti Tenses - Rahasia Mudah Memahami Tenses',
+      en: 'Sakti Tenses - Rahasia Mudah Memahami Tenses'
     },
     description: {
-      id: 'Cara bercerita yang menarik di era digital dan media sosial.',
-      en: 'Engaging storytelling in the digital and social media age.'
+      id: 'Belajar Tenses Hitungan Menit',
+      en: 'Belajar Tenses Hitungan Menit.'
     },
-    cover: 'https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
-    price: 'Rp 69.000',
+    cover: 'https://play.google.com/books/publisher/content/images/frontcover/wczADwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
+    price: 'Rp 118.719',
     rating: 4.7,
-    buyLink: 'https://play.google.com/store/books/details?id=YOUR_BOOK_ID_3',
+    buyLink: 'https://play.google.com/store/books/details?id=wczADwAAQBAJ',
     featured: true
-  }
+  },
   {
     id: 4,
+    title: {
+      id: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah',
+      en: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah'
+    },
+    description: {
+      id: 'Ada 5 hal menjadi cobaan yang akan datang untuk menggoncangkan bahkan membubarkan rumah tangga seseorang setelah menikah.',
+      en: 'There are 5 things that will become trials that will come to shake or even dissolve a persons household after marriage.'
+    },
+    cover: 'https://play.google.com/books/publisher/content/images/frontcover/vjPlDwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
+    price: 'Rp 22.200',
+    rating: 5,
+    buyLink: 'https://play.google.com/store/books/details?id=vjPlDwAAQBAJ',
+    featured: true
+  },
+  {
+    id: 5,
     title: {
       id: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah',
       en: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah'
