@@ -1,0 +1,76 @@
+---
+import { getLangFromUrl, useTranslations } from '../utils/i18n';
+import { getFeaturedProducts } from '../data/products';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const products = getFeaturedProducts();
+---
+
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        {t('products.title')}
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        {lang === 'id' ? 'Produk digital yang dirancang khusus untuk membantu perjalanan menulis Anda.' : 'Digital products specifically designed to help your writing journey.'}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {products.map((product) => (
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+          <div class="p-8">
+            <div class="flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-2xl mb-6 mx-auto">
+              <div class="text-primary-600 dark:text-primary-400" set:html={product.icon} />
+            </div>
+            
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">{product.title[lang]}</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6 text-center">{product.description[lang]}</p>
+            
+            <ul class="space-y-3 mb-8">
+              {product.features[lang].map((feature) => (
+                <li class="flex items-center text-gray-700 dark:text-gray-300">
+                  <svg class="w-5 h-5 text-accent-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            
+            <div class="text-center mb-6">
+              <div class="flex items-center justify-center space-x-2">
+                <span class="text-3xl font-bold text-primary-600 dark:text-primary-400">{product.price}</span>
+                <span class="text-lg text-gray-500 dark:text-gray-400 line-through">{product.originalPrice}</span>
+              </div>
+            </div>
+            
+            <a 
+              href={product.buyLink}
+              target={product.buyLink.startsWith('http') ? '_blank' : undefined}
+              rel={product.buyLink.startsWith('http') ? 'noopener noreferrer' : undefined}
+              class="block w-full text-center bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+              {lang === 'id' ? 'Dapatkan Sekarang' : 'Get Now'}
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Link ke halaman semua produk -->
+    <div class="text-center mt-12">
+      <a 
+        href="/products" 
+        class="inline-flex items-center px-6 py-3 text-lg font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+      >
+        {lang === 'id' ? 'Lihat Semua Produk' : 'View All Products'}
+        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

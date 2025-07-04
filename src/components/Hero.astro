@@ -1,0 +1,53 @@
+---
+import { getLangFromUrl, useTranslations } from '../utils/i18n';
+import { profileImage } from '../data/config';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style="animation-delay: 2s;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="animate-fade-in">
+      <!-- Profile Image -->
+      <div class="mb-8">
+        <img src={profileImage} 
+             alt="Profile" 
+             class="w-32 h-32 mx-auto rounded-full shadow-2xl border-4 border-white dark:border-gray-700">
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-slide-up">
+        {t('hero.title')}
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
+        {t('hero.subtitle')}
+      </p>
+
+      <!-- CTA Button -->
+      <div class="animate-slide-up" style="animation-delay: 0.4s;">
+        <a href="#featured-works" class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+          {t('hero.cta')}
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div class="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center">
+      <div class="w-1 h-3 bg-gray-400 dark:bg-gray-600 rounded-full mt-2"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getLangFromUrl, useTranslations } from '../../utils/i18n';
+import { siteConfig, profileImage } from '../../data/config';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout 
+  title="About Me - Digital Author"
+  description="Get to know more about my journey as a writer and digital innovator."
+>
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-900 dark:to-gray-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <img src={profileImage} alt="Profile" class="w-32 h-32 mx-auto rounded-full shadow-2xl border-4 border-white dark:border-gray-700 mb-8">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            About Me
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300">
+            Writer, Digital Innovator, and Dedicated Content Creator
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg dark:prose-invert mx-auto">
+          <div>
+            <h2>My Journey</h2>
+            <p>
+              Welcome to my world! I am a writer and digital innovator dedicated to creating works that inspire and change lives through the power of words and technology.
+            </p>
+            
+            <h3>Vision & Mission</h3>
+            <p>
+              My vision is to create a digital ecosystem that enables everyone to express their creativity through writing. Through the books, digital products, and innovative tools I develop, I am committed to:
+            </p>
+            <ul>
+              <li>Helping beginner writers find their voice</li>
+              <li>Providing practical and easy-to-use tools and resources</li>
+              <li>Building a supportive community of writers</li>
+              <li>Integrating technology with the art of writing</li>
+            </ul>
+
+            <h3>Works & Achievements</h3>
+            <p>
+              Throughout my career journey, I have published various books that have helped thousands of readers develop their writing skills. Additionally, I also develop various innovative digital products such as interactive story tools and online learning platforms.
+            </p>
+
+            <h3>Writing Philosophy</h3>
+            <p>
+              I believe that everyone has a story worth sharing. Writing is not just about technique, but also about the courage to share your unique perspective with the world. Through my works, I strive to provide practical guidance as well as inspiration to keep creating.
+            </p>
+
+            <h3>Technology & Innovation</h3>
+            <p>
+              As a digital innovator, I am always looking for ways to integrate the latest technology with traditional writing arts. The tools I develop are designed to simplify the creative process without losing the personal essence of each work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">10+</div>
+            <div class="text-gray-600 dark:text-gray-300">Books Published</div>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">5K+</div>
+            <div class="text-gray-600 dark:text-gray-300">Happy Readers</div>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">15+</div>
+            <div class="text-gray-600 dark:text-gray-300">Digital Products</div>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">3+</div>
+            <div class="text-gray-600 dark:text-gray-300">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">
+          Let's Collaborate!
+        </h2>
+        <p class="text-xl text-primary-100 mb-8">
+          Interested in collaborating or want to know more about my work?
+        </p>
+        <a 
+          href="/en/contact" 
+          class="inline-flex items-center px-8 py-4 text-lg font-semibold text-primary-600 bg-white hover:bg-gray-100 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+        >
+          Contact Me
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .prose h2 {
+    @apply text-3xl font-bold text-gray-900 dark:text-white mt-12 mb-6;
+  }
+  .prose h3 {
+    @apply text-2xl font-semibold text-gray-900 dark:text-white mt-8 mb-4;
+  }
+  .prose p {
+    @apply text-gray-600 dark:text-gray-300 mb-6 leading-relaxed;
+  }
+  .prose ul {
+    @apply text-gray-600 dark:text-gray-300 mb-6;
+  }
+  .prose li {
+    @apply mb-2;
+  }
+</style>
+</Layout>

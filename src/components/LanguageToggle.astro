@@ -1,0 +1,46 @@
+---
+import { languages } from '../utils/i18n';
+---
+
+<div class="relative">
+  <button id="language-toggle" class="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+    </svg>
+    <span id="current-lang">ID</span>
+  </button>
+  
+  <div id="language-menu" class="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 hidden">
+    <a href="/" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg" data-lang="id">
+      Indonesian
+    </a>
+    <a href="/en" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg" data-lang="en">
+      English
+    </a>
+  </div>
+</div>
+
+<script>
+  const languageToggle = document.getElementById('language-toggle');
+  const languageMenu = document.getElementById('language-menu');
+  const currentLang = document.getElementById('current-lang');
+
+  // Update current language display
+  const path = window.location.pathname;
+  if (path.startsWith('/en')) {
+    currentLang.textContent = 'EN';
+  } else {
+    currentLang.textContent = 'ID';
+  }
+
+  languageToggle?.addEventListener('click', () => {
+    languageMenu?.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!languageToggle?.contains(e.target as Node) && !languageMenu?.contains(e.target as Node)) {
+      languageMenu?.classList.add('hidden');
+    }
+  });
+</script>
