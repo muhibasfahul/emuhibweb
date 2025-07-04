@@ -24,24 +24,24 @@ export const digitalProducts: DigitalProduct[] = [
   {
     id: 1,
     title: {
-      id: 'Ebook Eksklusif',
-      en: 'Exclusive Ebooks'
+      id: 'StreamHib',
+      en: 'StreamHib'
     },
     description: {
-      id: 'Koleksi ebook eksklusif dengan panduan praktis untuk penulis.',
-      en: 'Exclusive ebook collection with practical guides for writers.'
+      id: 'Tool Live Youtube dan facebook Web based.',
+      en: 'ool Live Youtube dan facebook Web based.'
     },
     icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
   </svg>`,
     features: {
-      id: ['50+ Template Siap Pakai', 'Panduan Step-by-Step', 'Akses Seumur Hidup'],
-      en: ['50+ Ready-to-Use Templates', 'Step-by-Step Guide', 'Lifetime Access']
+      id: ['Tak perlu sewa RDP lagi', 'Live 24/7 Loss', 'HP/Laptop Mati tetap Live'],
+      en: ['No need to rent RDP anymore', 'Live 24/7 Loss', 'HP/Laptop is off but still Live']
     },
-    price: 'Rp 199.000',
+    price: 'Rp 200.000',
     originalPrice: 'Rp 299.000',
-    buyLink: 'https://your-store.com/ebook-collection',
-    category: 'ebook',
+    buyLink: 'https://streamhib.com',
+    category: 'toollive',
     featured: true
   },
   {
@@ -74,8 +74,8 @@ export const digitalProducts: DigitalProduct[] = [
       en: 'Online Classes'
     },
     description: {
-      id: 'Kelas online intensif untuk menguasai teknik menulis profesional.',
-      en: 'Intensive online class to master professional writing techniques.'
+      id: 'Kelas online intensif untuk belajar Dapat Duit Dari Youtube.',
+      en: 'Intensive online class to learn how to earn on Youtube.'
     },
     icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
