@@ -83,17 +83,33 @@ export const books: Book[] = [
   {
     id: 5,
     title: {
-      id: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah',
-      en: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah'
+      id: 'Dasar Bahasa Inggris - Modul Wajib Untuk Pemula',
+      en: 'Dasar Bahasa Inggris - Modul Wajib Untuk Pemula'
     },
     description: {
-      id: 'Ada 5 hal menjadi cobaan yang akan datang untuk menggoncangkan bahkan membubarkan rumah tangga seseorang setelah menikah.',
-      en: 'There are 5 things that will become trials that will come to shake or even dissolve a persons household after marriage.'
+      id: 'Berisi Materi Bahasa Inggris Dasar Yang Mudah dipahami untuk Pemula. Model Penyajianya Ala-ala Kampung Inggris Pare Kediri, Karena Penulisnya memang Lulusan dari Kampung Inggris.',
+      en: 'Berisi Materi Bahasa Inggris Dasar Yang Mudah dipahami untuk Pemula. Model Penyajianya Ala-ala Kampung Inggris Pare Kediri, Karena Penulisnya memang Lulusan dari Kampung Inggris.'
     },
-    cover: 'https://play.google.com/books/publisher/content/images/frontcover/vjPlDwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
-    price: 'Rp 22.200',
+    cover: 'https://play.google.com/books/publisher/content/images/frontcover/d_7ADwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
+    price: 'Rp 25.311',
     rating: 5,
-    buyLink: 'https://play.google.com/store/books/details?id=vjPlDwAAQBAJ',
+    buyLink: 'https://play.google.com/store/books/details?id=d_7ADwAAQBAJ',
+    featured: true
+  },
+  {
+    id: 6,
+    title: {
+      id: '3 Puisi',
+      en: '3 Puisi'
+    },
+    description: {
+      id: 'Berisi Kumpulan Puisi Romantis Gairah Masa Muda',
+      en: 'Berisi Kumpulan Puisi Romantis Gairah Masa Muda'
+    },
+    cover: 'https://play.google.com/books/publisher/content/images/frontcover/l7fEDwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
+    price: 'Rp 3000',
+    rating: 5,
+    buyLink: 'https://play.google.com/store/books/details?id=l7fEDwAAQBAJ',
     featured: true
   },
 ];
