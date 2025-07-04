@@ -15,7 +15,7 @@ export const ui = {
     'nav.story-tool': 'Tool Cerita',
     'nav.murottal-tool': 'Tool Murottal',
     'hero.title': 'Asfahul Muhib',
-    'hero.subtitle': 'Penikmat air putih hangat di tengah malam. Jiwanya senang menulis, Hobinya main internet, Kuliahnya pendidikan agama islam, Kursusnya bahasa Inggris. Gak ada yang nyambung!!!Semoga selalu diridhoi Allah perjalananya.',
+    'hero.subtitle': 'Penikmat air putih hangat di tengah malam. Jiwanya senang menulis, Hobinya main internet, Kuliahnya pendidikan agama islam, Kursusnya bahasa Inggris. Gak ada yang nyambung!!! Semoga Allah selalu meridhoi Perjalananya.',
     'hero.cta': 'Temukan Kebutuhanmu',
     'books.title': 'Karya Pilihan',
     'books.cta': 'Beli',
