@@ -35,4 +35,4 @@ export const siteConfig = {
 };
 
 // Profile Image - Ganti dengan foto profil Anda
-export const profileImage = 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop';
+export const profileImage = 'https://lh3.googleusercontent.com/a/ACg8ocKrVbNqBky_pyjbmBFqLF74jcRUOlbO5g3Nvh4YUpiIyMIkrzyF=s288-c-no?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop';
