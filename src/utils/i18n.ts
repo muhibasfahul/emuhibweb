@@ -15,7 +15,7 @@ export const ui = {
     'nav.story-tool': 'Tool Cerita',
     'nav.murottal-tool': 'Tool Murottal',
     'hero.title': 'Penulis & Art tech practice',
-    'hero.subtitle': 'Menulis dan Menyediakan Tool-tool Untuk Kebutuhan Online',
+    'hero.subtitle': 'Menulis dan Menyediakan tools Untuk Kebutuhan Online',
     'hero.cta': 'Temukan Kebutuhanmu',
     'books.title': 'Karya Pilihan',
     'books.cta': 'Beli',
