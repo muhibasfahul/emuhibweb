@@ -11,8 +11,8 @@ const { title, description, image } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const siteTitle = title || (lang === 'id' ? 'Penulis Digital - Karya & Produk Digital' : 'Digital Author - Works & Digital Products');
-const siteDescription = description || (lang === 'id' ? 'Platform penulis digital dengan koleksi buku, ebook, dan tools inovatif untuk membantu perjalanan menulis Anda.' : 'Digital author platform with book collections, ebooks, and innovative tools to help your writing journey.');
+const siteTitle = title || (lang === 'id' ? 'Penulis - Art Tech Practice' : 'Author - Art Tech Practice');
+const siteDescription = description || (lang === 'id' ? 'Penulis dengan koleksi buku, ebook, dan tools inovatif' : 'Author with a collection of books, ebooks and innovative tools.');
 const siteImage = image || '/og-image.jpg';
 ---
 
