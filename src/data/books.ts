@@ -23,13 +23,13 @@ export const books: Book[] = [
       en: 'Creative Writing Guide'
     },
     description: {
-      id: 'Buku panduan lengkap untuk mengembangkan kemampuan menulis kreatif Anda.',
-      en: 'Complete guide to developing your creative writing skills.'
+      id: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah',
+      en: '5 Rahasia Keluarga Sakinah Mawaddah Warrohmah'
     },
-    cover: 'https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
-    price: 'Rp 49.000',
+    cover: 'https://play.google.com/books/publisher/content/images/frontcover/vjPlDwAAQBAJ?fife=w240-h345?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop',
+    price: 'Rp 22.200',
     rating: 4.8,
-    buyLink: 'https://play.google.com/store/books/details?id=YOUR_BOOK_ID_1',
+    buyLink: 'https://play.google.com/store/books/details?id=vjPlDwAAQBAJ',
     featured: true
   },
   {
